@@ -48,7 +48,7 @@ const Header = () => {
         <button className="flex items-center cursor-pointer user" onClick={handleToogle} id="user">
           <img className="w-[35px] h-[35px] cursor-pointer user" src="../assets/landingPage/carbon_user-avatar.svg" alt="user" />
           <img
-            className={`${activeUserMenu && 'rotate-[-180deg]'} user transition duration-[0.5s] ease w-[15px] h-[7px] cursor-pointer`}
+            className={`${activeUserMenu && 'rotate-[-180deg]'} user transition duration-[0.4s] ease w-[15px] h-[7px] cursor-pointer`}
             src="../assets/landingPage/expand_more.svg"
             alt="expand"
           />
@@ -72,12 +72,6 @@ const Header = () => {
           </li>
           <li>
             <Link to={'/'} className="flex hover:underline items-center relative cursor-pointer font-medium text-sm leading-4">
-              <img className="w-[20px] h-[20px] mr-[8px]" src="../assets/landingPage/delivery-truck.svg" alt="truck" />
-              Delievery
-            </Link>
-          </li>
-          <li>
-            <Link to={'/'} className="flex hover:underline items-center relative cursor-pointer font-medium text-sm leading-4">
               <img className="w-[20px] h-[20px] mr-[8px]" src="../assets/landingPage/outline-place.svg" alt="place" />
               Location
             </Link>
@@ -94,10 +88,11 @@ const Header = () => {
 
       <nav
         className={`${
-          activeBurger ? 'flex' : 'hidden'
-        } min-[1130px]:flex min-[1130px]:flex-1 min-[1130px]:items-center min-[1130px]:justify-center items-start h-auto w-full`}>
+          activeBurger ? 'h-[264px]' : 'h-0'
+        } z-40 transition-all duration-[0.35s] ease overflow-hidden absolute top-[100px] min-[1130px]:h-auto min-[1130px]:static min-[1130px]:flex min-[1130px]:flex-1
+         min-[1130px]:items-center min-[1130px]:justify-center items-start w-full`}>
         <ul
-          className="min-[1130px]:max-w-full min-[1130px]:flex-row min-[1130px]:w-full min-[1130px]:items-center min-[1130px]:flex-1 min-[1130px]:relative absolute bg-[#7c8695]
+          className="min-[1130px]:max-w-full min-[1130px]:flex-row min-[1130px]:w-full min-[1130px]:border-none min-[1130px]:items-center min-[1130px]:flex-1 min-[1130px]:relative bg-[#7c8695]
          flex-col p-[20px] items-start w-full flex justify-center gap-[20px]">
           <li className="min-[1130px]:ml-auto flex items-center relative cursor-pointer font-semibold text-base leading-5 text-black">
             <Link
