@@ -26,10 +26,10 @@ dist-ssr
 rsync-deploy-admin-prod.sh
 rsync-deploy-admin-staging.sh
 rsync-deploy-admin-dev.sh
-.env.development
-.env.staging
-.env.production
-.env
+# .env.development
+# .env.staging
+# .env.production
+# .env
 
 # Prettier
 .prettierignore
